@@ -1,0 +1,218 @@
+# OpenAI Embeddings
+
+OpenAI embeddings are pre-trained language models used for natural language processing tasks. These models are built using deep learning algorithms and can be fine-tuned for specific tasks. OpenAI provides several pre-trained embeddings, including GPT-2, GPT-3, and BERT. Each of these models has a different number of parameters and can be used for different tasks.
+
+To use OpenAI embeddings, you can install the OpenAI API and authenticate with your API key. Then, you can load the desired OpenAI embedding model and use it for your NLP task. For example, you can generate text using the model by calling the completions method.
+
+OpenAI embeddings are trained on large amounts of text data and are designed to capture the meaning of words and phrases in a way that is useful for downstream NLP tasks. This is achieved through a process called unsupervised learning, where the model learns from the patterns in the data without being explicitly trained on a specific task.
+
+Once trained, OpenAI embeddings can be used for a variety of NLP tasks, such as text classification, sentiment analysis, and language translation. In addition, they can be fine-tuned for specific tasks by providing additional training data and adjusting the model's parameters.
+
+OpenAI provides several pre-trained embedding models with varying sizes and capabilities. GPT-2 and GPT-3 are both transformer-based models that are well-suited for language generation tasks, such as text completion and question answering. BERT, on the other hand, is a bidirectional encoder that is particularly useful for tasks that require understanding the relationship between different words in a sentence, such as sentiment analysis and named entity recognition.
+
+Overall, OpenAI embeddings are a powerful tool for NLP tasks and have been used to achieve state-of-the-art performance on a wide range of benchmarks and applications.
+
+## Storing Embeddings in Postgres
+
+`pgvector` is a Postgres extension that provides support for vector operations, including similarity search and nearest neighbor search. It allows you to store vectors as columns in a database table and perform vector operations on them using SQL queries.
+
+One interesting use case of `pgvector` is to use it in conjunction with OpenAI embeddings. Since OpenAI embeddings represent words and phrases as high-dimensional vectors, you can store these vectors in a pgvector column and use the extension's similarity search capabilities to find similar words or phrases in a large dataset.
+
+For example, let's say you have a database of customer reviews and you want to find all the reviews that mention a particular product. You could use OpenAI embeddings to represent each review as a vector and store these vectors in a pgvector column. Then, you could perform a similarity search to find all the reviews that are similar to the vector representing the product name.
+
+This approach can be very powerful for applications that involve large amounts of text data, as it allows you to perform complex queries on the data using vector operations. However, it does require some additional setup and configuration compared to traditional SQL queries, so it may not be suitable for all use cases.
+
+
+
+# 動物診療活動場所及動物商業業務場所
+## 第一節
+### 動物診療活動場所
+#### 第十九條
+##### 場所准照的強制性
+
+一、所有動物診療活動均須在具備本章規定的有效准照的動物診療活動場所內進行。
+
+二、基於緊急救治動物的需要，又或基於動物體型龐大或健康狀況不佳而不宜運送，有關動物診療活動可在上款所指場所以外的地方進行。
+
+三、在不影響上款規定的情況下，基於法律規定或為保護動物的目的，市政署得許可在指定的時間由持有有效註冊證的獸醫在第一款所指場所以外的地方進行動物診療活動。
+
+#### 第二十條
+##### 發出場所准照的要件
+
+除須符合第二十六條的規定外，尚須同時符合以下的要件，方可獲發動物診療活動場所准照：
+
+（一）具備至少一名持有有效註冊證的獸醫；
+
+（二）場所管理方案獲市政署核准。
+
+#### 第二十一條
+##### 場所的要求
+
+動物診療活動場所不得設置於用作居住用途的不動產。
+
+#### 第二十二條
+##### 場所准照持有人的義務
+
+動物診療活動場所准照的持有人須履行下列的義務：
+
+（一）不安排未持有有效註冊證的獸醫進行動物診療活動；
+
+（二）於場所內的顯眼處張貼准照及在場所執業獸醫的註冊證；
+
+（三）妥善保存醫療紀錄五年，包括客戶資料和接受診療的動物的資料、病歷、檢驗結果，以及診斷、治療和護理紀錄；
+
+（四）確保場所運作期間具備至少一名持有有效註冊證的獸醫；
+
+（五）遵守由市政署發出旨在保護動物和保障公共衛生及安全而採取的措施的指引。
+
+## 第二節
+### 動物商業業務場所
+#### 第二十三條
+##### 場所准照的強制性
+
+從事動物商業業務，須在具備本章規定的有效准照的動物商業業務場所內為之。
+
+#### 第二十四條
+##### 場所的要求
+
+一、動物商業業務場所不得設置於與從事有關業務不相符的不動產內，尤其是用作居住、工業、公共設施或機動車輛停泊用途的不動產。
+
+二、動物商業業務場所僅可用作從事下列任一種業務，但屬下款所指情況除外：
+
+（一）繁殖；
+
+（二）售賣；
+
+（三）寄養。
+
+三、如場所具有從事相關業務的獨立空間，且能防止不同來源動物之間的動物疫病傳播及確保動物有足夠的活動空間，經市政署批准後，可同時從事多於一種上款所指的業務。
+
+#### 第二十五條
+##### 場所准照持有人的義務
+
+一、動物商業業務場所准照的持有人須履行下列的義務：
+
+（一）於場所內的顯眼處張貼准照；
+
+（二）妥善保存動物合法來源的證明文件三年以供溯源查核，包括動物的來源登記冊、進口文件及轉移自其他已取得動物繁殖和售賣准照的場所的證明文件；
+
+（三）為用作繁殖或售賣的動物採取預防疾病的措施；
+
+（四）場所內飼養用作繁殖的犬貓不得超過市政署規定的數量；
+
+（五）為犬貓提供繁殖前的健康檢查；
+
+（六）不得售賣患病的動物；
+
+（七）遵守由市政署發出旨在保護動物和保障公共衛生及安全而採取的措施的指引。
+
+二、為審查上款（三）項、（五）項及（六）項所指義務的遵守情況，市政署可要求准照持有人提交由獸醫簽發的證明書、診斷書或同等效力的文件作證明。
+
+## 第三節
+### 共同規定
+#### 第二十六條
+##### 發出准照的要件
+
+一、同時符合下列要件者，方可獲發動物診療活動場所准照或動物商業業務場所准照：
+
+（一）為具備行為能力的自然人，或依法設立的法人；
+
+（二）非處於禁止從事相關業務或活動的附加刑、保安處分或附加處罰的期間內；
+
+（三）未有任何債務正透過稅務執行程序進行強制徵收；
+
+（四）具備符合下條規定的場所。
+
+二、如申請人為法人，則上款（二）項的規定亦適用於其經理、行政管理機關成員或機關主要據位人。
+
+#### 第二十七條
+##### 場所的設置及兼營業務或活動
+
+一、場所的間隔、設施及設備的具體要求，由公佈於《公報》的行政法務司司長批示訂定。
+
+二、同一場所不得同時從事動物診療活動及動物商業業務。
+
+三、如場所內兼營或進行按其他適用的法律規定無須准照或許可的業務或活動，不得影響本法律所定場所准照的業務或活動。
+
+四、場所內不得兼營或進行按其他適用的法律規定須獲取准照或許可的業務或活動，但具有獨立出入口及獨立空間者除外。
+
+#### 第二十八條
+##### 准照的有效期及續期
+
+一、准照有效期為簽發之日至翌年十二月三十一日為止，其後可每年續期。
+
+二、准照持有人須於准照有效期屆滿前六十日內申請續期。
+
+三、如准照持有人未提出准照續期申請，又或准照不獲續期，則准照於其有效期屆滿時失效。
+
+#### 第二十九條
+##### 程序
+
+一、在本章規定的准照發出及續期前，市政署應對有關場所進行檢查。
+
+二、准照的申請及續期程序由補充性行政法規訂定。
+
+#### 第三十條
+##### 更改資料
+
+一、准照持有人僅經市政署確認符合第二十六條規定的要件並獲批准後，方可更改下列事項：
+
+（一）准照持有人；
+
+（二）已獲核准的場所間隔、設施及設備；
+
+（三）已獲核准的場所管理方案。
+
+二、如准照持有人屬法人，更改其經理、行政管理機關成員或機關主要據位人，須自有關事實發生之日起三十日內通知市政署。
+
+三、如更改場所名稱，上款的通知規定亦予以適用。
+
+#### 第三十一條
+##### 中止准照
+
+一、屬下列任一情況，中止准照：
+
+（一）准照持有人提出申請；
+
+（二）如准照持有人為自然人，其處於被科處禁止從事相關業務的附加刑、保安處分或附加處罰的期間；
+
+（三）如准照持有人為法人，其經理、行政管理機關成員或機關主要據位人處於被科處禁止從事相關業務的附加刑、保安處分或附加處罰的期間；
+
+（四）不再符合第二十條（一）項規定的要件；
+
+（五）不按第二十條（二）項所指的場所管理方案進行管理；
+
+（六）不再符合第二十六條第一款（三）項及第二十七條第一款至第三款規定的任一要件；
+
+（七）有跡象顯示進行的活動危害公共衛生或安全，尤其涉及防火或建築安全，且市政署認為屬可於短期內補正的情況；
+
+（八）執行中止准照的附加處罰的期間。
+
+二、如准照持有人根據上款（一）項的規定提出中止准照申請，該中止期間不得在其准照有效期內連續或間斷超過八個月。
+
+三、屬第一款（四）項至（七）項規定的任一情況，市政署應通知准照持有人導致中止的原因、補正的方式及期限，但該期限不得超過兩個月。
+
+四、如准照持有人於上款所指的補正期間內作出補正，市政署則取消中止准照。
+
+五、准照的中止不影響其有效期屆滿，而准照持有人仍可依法申請續期。
+
+#### 第三十二條
+##### 註銷准照
+
+屬下列任一情況，註銷准照：
+
+（一）准照持有人提出申請；
+
+（二）藉虛假聲明、虛假資料或其他不法手段取得准照；
+
+（三）有跡象顯示所進行的活動危害公共衛生或安全，尤其涉及防火或建築安全，且市政署認為屬不可於短期內補正的情況；
+
+（四）於場所內兼營或進行按其他適用的法律規定須獲取准照或許可的業務或活動，但具有獨立出入口及獨立空間者除外；
+
+（五）場所的業務終止；
+
+（六）屬上條第一款（四）項至（七）項規定的任一情況，且准照持有人未有於該條第三款所指的補正期間內作出補正；
+
+（七）執行註銷准照的附加處罰；
+
+（八）准照持有人死亡、無行為能力或消滅；但繼受人於一百二十日內提出替換准照持有人的申請者除外。
